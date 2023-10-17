@@ -1,0 +1,114 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+:root {
+    --green: #27ae60;
+    --black: #444;
+    --light-color: #777;
+    --bg-color: #e6e6e6;
+    --border: .1rem solid rgba(0,0,0,.2);
+    --box-shadow: .4rem .4rem 1rem #ccc,
+                 -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset: .4rem .4rem 1rem #ccc inset,
+                 -.4rem -.4rem 1rem #fff inset;
+}
+body{
+    background-color: var(--bg-color) !important;
+} 
+.btn{
+    box-shadow: var(--box-shadow);
+    border-radius: 100px !important;
+    color: var(--light-color) !important;
+}
+.btn:hover{
+    box-shadow: var(--box-shadow-inset);
+}
+.heroContainer h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-weight:900;
+}
+.heroContainer p{
+    color: var(--green);
+}
+.heroContainer button{
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color) !important;
+    padding: 8px;
+}
+.heroContainer button:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+.socialIcons i{
+    color: var(--light-color);
+    box-shadow: var(--box-shadow);
+    font-size: 25px;
+    border: 2px solid var(--bg-color);
+    margin: 0  0px;
+    padding: 8px;
+    
+    
+
+}
+.socialIcons i:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+.socialIcons{
+    box-shadow: var(--box-shadow);
+    /* width: 50%; */
+    text-align: center;
+    padding: 0 150px;
+}
+.containerHeading h3{
+    font-size: 2rem !important;
+    color: var(--black);
+    font-weight:700 !important;
+}
+.containerHeading h3::before,
+.containerHeading h3::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--green);
+    display: inline-block;
+   
+}
+.containerHeading h3::after{
+    margin: 0 0 10px 15px;
+}
+.containerHeading h3::before{
+    margin: 0 15px 10px 0;
+}
+.aboutContent span{
+   font-size: 16px;
+   border: 1px solid var(--bg-color) ;
+   box-shadow: var(--box-shadow-inset);
+   margin-right: 8px !important;
+   padding: 3px;
+}
+.aboutContent p,ul{
+    padding: 8px 3px;
+    box-shadow: var(--box-shadow);
+}
+.aboutContent p:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+.subElement li{
+    list-style: none !important;
+    margin: 5px 0;
+}
+.subElement i{
+    color: var(--black);
+    margin: 0 8px 0 0;
+}
